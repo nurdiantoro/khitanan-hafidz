@@ -1,0 +1,16 @@
+.label::before{
+    content: "";
+    height: 10px;
+    background: #fff;
+    position: absolute;
+    left: -5%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 110%;
+    z-index: -1;
+}
+
+.text-input:focus + .label, .filled{
+    top: 0;
+    font-size: 10px;
+}
